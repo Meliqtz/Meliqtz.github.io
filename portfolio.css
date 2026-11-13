@@ -414,3 +414,39 @@ h1 .role-line { display: block; color: var(--red-light); min-height: 1.05em; }
 @media (prefers-reduced-motion: reduce) {
   .cursor { animation: none; opacity: 1; }
 }
+
+/* ── ACTIVITIES ── */
+.activity-card {
+  display: block;
+  height: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.activity-card:hover {
+  border-color: var(--border-red);
+  transform: translateY(-3px);
+}
+.activity-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--red-light);
+  letter-spacing: 0.14em;
+  margin-bottom: 0.5rem;
+}
+.activity-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+}
+.activity-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
